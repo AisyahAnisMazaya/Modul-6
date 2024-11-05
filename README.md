@@ -96,3 +96,20 @@ Bilangan ganjil: Program hanya mencetak bilangan yang habis dibagi 2 sisanya 1.
 Penjelasan Singkat:
 Kode ini menggunakan rekursi untuk mencetak bilangan ganjil dari n hingga 1. Dengan memeriksa setiap bilangan apakah ganjil atau tidak, dan memanggil fungsi secara rekursif untuk bilangan yang lebih kecil, program ini menghasilkan urutan bilangan ganjil.
 
+6. Penjelasan Kode:
+Kode di atas adalah program Go yang digunakan untuk menghitung nilai pangkat dari suatu bilangan.
+Fungsi pangkat:
+Parameter: Fungsi ini menerima dua parameter integer, yaitu x yang merupakan bilangan dasar dan y yang merupakan pangkat.
+Kondisi dasar: Jika y sama dengan 0, maka fungsi akan mengembalikan nilai 1 (karena setiap bilangan pangkat 0 adalah 1).
+Panggilan rekursif: Jika y tidak sama dengan 0, fungsi akan mengembalikan hasil perkalian antara x dengan hasil pemanggilan fungsi pangkat dengan parameter x dan y-1. Ini adalah inti dari perhitungan pangkat secara rekursif.
+Fungsi main:
+Meminta input: Program meminta pengguna untuk memasukkan nilai x sebagai bilangan dasar dan y sebagai pangkat.
+Memanggil fungsi pangkat: Fungsi pangkat dipanggil dengan nilai x dan y yang telah diinputkan pengguna.
+Mencetak hasil: Hasil dari pemanggilan fungsi pangkat akan disimpan dalam variabel hasil dan kemudian dicetak ke layar.
+Cara Kerja:
+Input: Pengguna memasukkan nilai x dan y.
+Panggilan rekursif: Fungsi pangkat dipanggil dengan nilai x dan y.
+Perhitungan: Fungsi pangkat akan terus memanggil dirinya sendiri dengan nilai y yang semakin kecil hingga mencapai kondisi dasar (y == 0).
+Hasil: Setelah mencapai kondisi dasar, hasil perhitungan akan dikembalikan ke pemanggilan fungsi sebelumnya, dan seterusnya hingga mencapai panggilan awal.
+Cetak hasil: Hasil akhir dari perhitungan akan dicetak ke layar.
+
