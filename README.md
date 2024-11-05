@@ -66,3 +66,33 @@ Cetak nilai pertama: Nilai n dicetak.
 Panggilan rekursif: Fungsi memanggil dirinya sendiri dengan n-1.
 Ulangi langkah 3 dan 4: Langkah 3 dan 4 diulang hingga n menjadi 1.
 Cetak nilai terakhir: Setelah semua panggilan rekursif selesai, nilai n awal dicetak lagi.
+
+5. Penjelasan Kode:
+Kode di atas adalah program Go yang dirancang untuk mencetak bilangan ganjil dari n hingga 1 secara rekursif.
+Fungsi bilanganGanjil:
+Parameter: Fungsi ini menerima satu parameter integer n yang merupakan batas atas bilangan yang akan dicetak.
+Kondisi berhenti: Jika n kurang dari atau sama dengan 1, maka fungsi akan berhenti secara rekursif.
+Cek bilangan ganjil: Jika n dibagi 2 sisanya 1 (artinya n adalah bilangan ganjil), maka n akan dicetak.
+Panggilan rekursif: Fungsi akan memanggil dirinya sendiri dengan nilai n-2, sehingga akan melompati bilangan genap dan hanya mencetak bilangan ganjil.
+Fungsi main:
+Meminta input: Program meminta pengguna untuk memasukkan sebuah bilangan n.
+Cek bilangan genap atau ganjil: Program memeriksa apakah n adalah bilangan ganjil atau genap.
+Panggilan fungsi:
+Jika n ganjil, fungsi bilanganGanjil dipanggil dengan nilai n.
+Jika n genap, fungsi bilanganGanjil dipanggil dengan nilai n-1 agar dimulai dari bilangan ganjil terdekat.
+Cara Kerja:
+Input: Pengguna memasukkan sebuah bilangan n.
+Cek genap/ganjil: Program memeriksa apakah n genap atau ganjil.
+Panggilan rekursif: Fungsi bilanganGanjil dipanggil dengan nilai yang sesuai.
+Cetak bilangan ganjil: Fungsi akan mencetak bilangan ganjil secara rekursif, dimulai dari n atau n-1 (tergantung apakah n genap atau ganjil).
+Contoh Output:
+Jika pengguna memasukkan nilai 7, maka output yang dihasilkan adalah:
+7 5 3 1
+Pola Output:
+Program akan mencetak bilangan ganjil dari n hingga 1 secara menurun.
+Konsep Penting:
+Rekursi: Fungsi memanggil dirinya sendiri secara berulang hingga mencapai kondisi dasar.
+Bilangan ganjil: Program hanya mencetak bilangan yang habis dibagi 2 sisanya 1.
+Penjelasan Singkat:
+Kode ini menggunakan rekursi untuk mencetak bilangan ganjil dari n hingga 1. Dengan memeriksa setiap bilangan apakah ganjil atau tidak, dan memanggil fungsi secara rekursif untuk bilangan yang lebih kecil, program ini menghasilkan urutan bilangan ganjil.
+
