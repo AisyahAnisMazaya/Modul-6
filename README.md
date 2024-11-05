@@ -47,3 +47,22 @@ Fungsi main:
 Meminta input: Program meminta pengguna untuk memasukkan sebuah bilangan.
 Memanggil fungsi faktor: Fungsi faktor dipanggil dengan parameter n (bilangan yang dimasukkan pengguna) dan i dengan nilai awal 1.
 Mencetak hasil: Hasil dari fungsi faktor (yaitu faktor-faktor pembagi) akan dicetak di layar.
+
+4. Penjelasan Kode:
+Kode di atas adalah program Go yang menggunakan konsep rekursi untuk mencetak suatu urutan bilangan secara khusus.
+Fungsi rekursifSequence:
+Parameter: Fungsi ini menerima satu parameter integer n yang menentukan batas atas urutan bilangan yang akan dicetak.
+Kondisi dasar: Jika n sama dengan 1, maka fungsi akan mencetak angka 1 dan langsung berhenti (return). Ini adalah kasus dasar dari rekursi.
+Cetak nilai: Fungsi akan mencetak nilai n terlebih dahulu.
+Panggilan rekursif: Kemudian, fungsi akan memanggil dirinya sendiri dengan nilai n-1, yang berarti akan mencetak urutan bilangan yang lebih kecil secara rekursif.
+Cetak nilai lagi: Setelah panggilan rekursif selesai, fungsi akan mencetak nilai n sekali lagi.
+Fungsi main:
+Meminta input: Program meminta pengguna untuk memasukkan sebuah bilangan.
+Memanggil fungsi rekursif: Fungsi rekursifSequence dipanggil dengan nilai n yang dimasukkan pengguna, sehingga urutan bilangan akan dicetak mulai dari n hingga 1 dan kemudian kembali ke n.
+Cara Kerja:
+Input: Pengguna memasukkan sebuah bilangan n.
+Panggilan awal: Fungsi rekursifSequence dipanggil dengan nilai n.
+Cetak nilai pertama: Nilai n dicetak.
+Panggilan rekursif: Fungsi memanggil dirinya sendiri dengan n-1.
+Ulangi langkah 3 dan 4: Langkah 3 dan 4 diulang hingga n menjadi 1.
+Cetak nilai terakhir: Setelah semua panggilan rekursif selesai, nilai n awal dicetak lagi.
