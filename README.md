@@ -36,3 +36,14 @@ Program meminta pengguna untuk memasukkan jumlah baris yang diinginkan.
 Nilai yang dimasukkan disimpan dalam variabel n.
 Program kemudian memanggil fungsi printStars dengan nilai awal baris 1 dan jumlah baris n.
 Fungsi printStars akan mencetak bintang sebanyak nilai baris saat ini, kemudian memanggil dirinya sendiri secara rekursif untuk mencetak baris berikutnya. Proses ini terus berulang hingga baris yang dicetak melebihi jumlah baris yang diinginkan.
+
+3. Kode di atas adalah program Go yang dirancang untuk mencari dan mencetak faktor-faktor pembagi dari sebuah bilangan bulat positif. Namun, ada beberapa kejanggalan dalam kode ini yang perlu diperhatikan.
+Fungsi faktor:
+Parameter: Fungsi ini menerima dua parameter integer, yaitu n yang mewakili bilangan yang akan dicari faktornya, dan i yang merupakan pembagi yang sedang diuji.
+Kondisi berhenti: Jika n kurang dari atau sama dengan 1, maka fungsi akan berhenti secara rekursif.
+Menemukan faktor: Jika n habis dibagi i (artinya i adalah faktor dari n), maka nilai i akan dicetak.
+Panggilan rekursif: Fungsi akan memanggil dirinya sendiri dengan nilai i yang ditambah 1, sehingga secara bertahap semua bilangan dari 1 hingga n akan diuji sebagai pembagi.
+Fungsi main:
+Meminta input: Program meminta pengguna untuk memasukkan sebuah bilangan.
+Memanggil fungsi faktor: Fungsi faktor dipanggil dengan parameter n (bilangan yang dimasukkan pengguna) dan i dengan nilai awal 1.
+Mencetak hasil: Hasil dari fungsi faktor (yaitu faktor-faktor pembagi) akan dicetak di layar.
